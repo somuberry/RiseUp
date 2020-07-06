@@ -43,31 +43,33 @@ html {
 	float: left;
 	height: 47%;
 	text-align: center;
+	align-content: center;
 	background-color: #594F51;
 }
 
 .mdc-layout-grid__cellinset {
-	width: 390px;
+	width: 100%;
+	margin: auto;
 	margin-top: 6%;
 	padding: 0;
 	overflow: hidden;
 	height: 200px;
-	
+	object-fit: contain;
 }
 
 .tiles {
-	width: 360px;
+	width: 100%;
 }
 
 @keyframes swell {
-		from {width: 360px;}
-		to {width: 365px;}
+		from {width: 100%;}
+		to {width: 99%;}
 	}
 
 img.tiles:hover {	
 	animation-name: swell;
 	animation-duration: 0.2s;
-	width: 365px;
+	width: 99%;
 }
 
 .boxgrid {
